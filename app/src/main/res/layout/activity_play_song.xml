@@ -9,19 +9,29 @@
     tools:context=".PlaySong">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageView1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:src="@drawable/unplase1"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="16dp" />
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:src="@drawable/icon_frame"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="286dp"
         android:layout_height="294dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/icon"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
