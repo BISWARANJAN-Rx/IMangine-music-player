@@ -18,13 +18,7 @@ import java.util.ArrayList;
 
 
 
-
-
-
 public class PlaySong extends AppCompatActivity {
-
-
-
 
     @Override
     protected void onDestroy() {
@@ -37,14 +31,6 @@ public class PlaySong extends AppCompatActivity {
 
 
     }
-
-
-
-
-
-
-
-
 
     TextView textView;
     TextView musicEnd;
@@ -200,20 +186,11 @@ public class PlaySong extends AppCompatActivity {
 //        },delay);
 
 
-
-
-
-
-
-
-
-
-
         play.setOnClickListener(v -> {
             if(mediaPlayer.isPlaying()){
                 play.setImageResource(R.drawable.play);
                 mediaPlayer.pause();
-                textView.setTextColor(Color.parseColor("#FF8000"));
+                textView.setTextColor(Color.parseColor("#A300FF"));
             }
             else{
                 play.setImageResource(R.drawable.pause);
@@ -281,16 +258,6 @@ public class PlaySong extends AppCompatActivity {
 
 
 
-
-
-
-
-
-
-
-
-
-
     }
 private void next()
 {
@@ -351,9 +318,6 @@ private String CreateTime(int Duration, int endTime)
     return time;
 
 }
-
-
-
 
 
 }
