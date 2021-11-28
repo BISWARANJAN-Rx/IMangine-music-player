@@ -7,13 +7,12 @@
     tools:context=".MainActivity"
     >
 
-
     <ListView
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/listView"
-        android:background="#C9936363"
+        android:background="#00DBD8"
 
         />
 </androidx.constraintlayout.widget.ConstraintLayout>
