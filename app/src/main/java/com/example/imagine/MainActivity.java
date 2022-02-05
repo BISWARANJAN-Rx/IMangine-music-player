@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-                        Toast.makeText(MainActivity.this,"VERSION-1.4",Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(MainActivity.this,"VERSION-1.4",Toast.LENGTH_SHORT).show();
 
 
                         ArrayList<File> mySongs=fetchSongs(Environment.getExternalStorageDirectory());
@@ -64,8 +64,8 @@ public class MainActivity extends AppCompatActivity {
                         {
                             items[i]=mySongs.get(i).getName().replace(".mp3","");
                         }
-                        ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1,items);
-
+//                        ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1,items);
+                        ArrayAdapter<String> adapter=new ArrayAdapter<String>(getApplicationContext(),R.layout.color_listview,items);
                         listView.setAdapter(adapter);
                         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                             @Override
@@ -82,10 +82,7 @@ public class MainActivity extends AppCompatActivity {
                                 intent.putExtra("currentSong",currentSong);
                                 intent.putExtra("position",position);
 
-
-
                                 startActivity(intent);
-
                             }
                         });
 
